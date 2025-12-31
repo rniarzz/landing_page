@@ -1,7 +1,73 @@
-/* =========================
-   TUTORIAL SECTION (CARD)
-========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #4a044e;
+}
 
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbcfe8, #f472b6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  gap: 28px;
+}
+
+.logo {
+  width: 90px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.hero p {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-group {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 14px 30px;
+  background: white;
+  color: #db2777;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(219, 39, 119, 0.25);
+}
+
+/* SECTIONS */
+.content,
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fff1f2;
+}
+
+.content h2,
+.contact h2 {
+  color: #9d174d;
+}
+
+/* TUTORIAL */
 .tutorial {
   background: #fdf2f8;
   padding: 100px 20px;
@@ -11,17 +77,14 @@
   text-align: center;
   color: #9d174d;
   font-size: 34px;
-  margin-bottom: 12px;
 }
 
 .subtitle {
   text-align: center;
+  margin: 20px 0 60px;
   color: #6b7280;
-  font-size: 16px;
-  margin-bottom: 60px;
 }
 
-/* KOTAK STEP */
 .step {
   max-width: 900px;
   margin: 0 auto 36px;
@@ -31,14 +94,11 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* JUDUL STEP */
 .step h3 {
   color: #be185d;
-  font-size: 20px;
   margin-bottom: 14px;
 }
 
-/* LIST */
 .step ul {
   padding-left: 20px;
 }
@@ -48,17 +108,14 @@
   line-height: 1.7;
 }
 
-/* NOTE */
 .note {
   margin-top: 16px;
   background: #fce7f3;
   padding: 14px 18px;
   border-left: 6px solid #db2777;
   border-radius: 10px;
-  font-size: 14px;
 }
 
-/* PRIVACY BOX */
 .privacy {
   max-width: 900px;
   margin: 50px auto 0;
@@ -73,6 +130,9 @@
   margin-bottom: 14px;
 }
 
-.privacy li {
-  margin-bottom: 10px;
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px;
+  background: #fbcfe8;
 }
