@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  color: #1e40af;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.content, .contact {
+  padding: 60px 20px;
+  text-align: center;
+}
