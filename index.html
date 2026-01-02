@@ -14,16 +14,24 @@
 
 <body class="bg-rose-50 text-slate-800">
 
+<!-- ================= LOGO CENTER ================= -->
+<div class="position-absolute top-0 start-50 translate-middle-x mt-4 z-10">
+  <img src="logo.png" 
+       alt="Logo ML Readiness Assessment"
+       style="height: 180px;"
+       class="drop-shadow mx-auto d-block">
+</div>
+
 <!-- ================= HERO ================= -->
 <header class="min-vh-100 d-flex align-items-center text-center bg-gradient-to-br from-pink-200 to-pink-400">
   <div class="container">
     <h1 class="fw-bold text-4xl text-rose-900 mb-3">
       Machine Learning Readiness Assessment
     </h1>
-    <p class="lead max-w-3xl mx-auto mb-4 text-rose-900">
-      Platform evaluasi kesiapan organisasi dalam mengadopsi Machine Learning
-      secara strategis, terukur, dan berkelanjutan.
-    </p>
+  <p class="lead mx-auto mb-4 text-rose-900" style="max-width: 1000px; line-height: 1.4;">
+  Platform evaluasi kesiapan organisasi dalam mengadopsi Machine Learning secara strategis, terukur, dan berkelanjutan.
+</p>
+
 
     <div class="d-flex justify-content-center gap-3 flex-wrap">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScRzM3Rxg-UpCGjWkOXzUc462tf4qzNLSMSq1NyL0HIW1PAEw/viewform"
@@ -104,23 +112,48 @@
 <!-- ================= SCREENSHOT ================= -->
 <section class="py-5 bg-rose-50">
   <div class="container max-w-4xl text-center">
-    <h2 class="fw-bold text-rose-800 mb-2">Screenshot Produk</h2>
-    <p class="text-slate-600 mb-4">Contoh tampilan kuesioner dan hasil rekap data</p>
 
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="border rounded-4 p-3 bg-white shadow-sm h-100">
-          <p class="text-slate-500">Google Form</p>
-          <img src="ml.png" class="img-fluid rounded mx-auto d-block" style="max-height:280px;">
+    <h2 class="fw-bold text-rose-800 mb-2">
+      Screenshot Produk
+    </h2>
+    <p class="text-slate-600 mb-4">
+      Contoh tampilan kuesioner dan hasil rekap data
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- GOOGLE FORM -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="border rounded-4 p-3 bg-white shadow-sm w-100">
+          <p class="text-slate-500 text-center mb-3">
+            Google Form
+          </p>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="ml.png"
+                 alt="Tampilan Google Form"
+                 class="img-fluid rounded"
+                 style="max-height:280px; object-fit:contain;">
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="border rounded-4 p-3 bg-white shadow-sm h-100">
-          <p class="text-slate-500">Google Spreadsheet</p>
-          <img src="hasil.png" class="img-fluid rounded mx-auto d-block" style="max-height:280px;">
+      <!-- GOOGLE SPREADSHEET -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="border rounded-4 p-3 bg-white shadow-sm w-100">
+          <p class="text-slate-500 text-center mb-3">
+            Google Spreadsheet
+          </p>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="hasil.png"
+                 alt="Tampilan Google Spreadsheet"
+                 class="img-fluid rounded"
+                 style="max-height:280px; object-fit:contain;">
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -175,7 +208,7 @@
     </div></div>
 
     <div class="card shadow-sm rounded-4 mb-4"><div class="card-body">
-      <h5 class="fw-bold text-rose-700">5) Pengolahan & Hasil Data</h5>
+      <h5 class="fw-bold text-rose-800">5) Pengolahan & Hasil Data</h5>
       <ul>
         <li>Direkap otomatis ke Google Spreadsheet</li>
         <li>Digunakan untuk analisis kesiapan Machine Learning</li>
@@ -196,35 +229,250 @@
   </div>
 </section>
 
-<!-- ================= TIM ================= -->
-<section class="py-5">
+<!-- ================= CARA DOWNLOAD ================= -->
+<style>
+  /* LIST STEP DENGAN ANGKA BULAT */
+  .step-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .step-list > li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 14px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+  }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+    background: #e11d48; /* rose-600 */
+    color: #fff;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+
+  /* SUB ITEM (BULLET) */
+  .step-sub {
+    margin-top: 8px;
+    margin-left: 20px;
+    list-style: disc;
+  }
+
+  .step-sub li {
+    margin-bottom: 6px;
+  }
+</style>
+
+<section class="py-5 bg-white">
   <div class="container max-w-4xl">
-    <h2 class="fw-bold text-rose-800 mb-4">Profil Tim</h2>
 
-    <div class="row g-4 text-center">
-      <div class="col-md-4"><div class="card shadow-sm rounded-4"><div class="card-body">
-        <h5 class="fw-bold">Vivie Zuliani Erikasari</h5>
-        <p>Project Manager</p>
-      </div></div></div>
+    <h2 class="fw-bold text-rose-800 text-center mb-2">
+      Cara Download
+    </h2>
+    <p class="text-center text-slate-500 mb-5">
+      Panduan pengunduhan instrumen dan hasil analisis Machine Learning Readiness
+    </p>
 
-      <div class="col-md-4"><div class="card shadow-sm rounded-4"><div class="card-body">
-        <h5 class="fw-bold">Kharlin Ahmad Hanafi Siregar</h5>
-        <p>Assessment Designer</p>
-      </div></div></div>
+    <!-- ================= BOX A ================= -->
+    <div class="border-2 border-dashed border-rose-300 rounded-4 p-4 p-md-5 mb-5">
 
-      <div class="col-md-4"><div class="card shadow-sm rounded-4"><div class="card-body">
-        <h5 class="fw-bold">Rini Ariza</h5>
-        <p>Web & Integration</p>
-      </div></div></div>
+      <h5 class="fw-bold text-rose-700 mb-4">
+        📄 A. Download Google Form (Instrumen ML Readiness)
+      </h5>
+
+      <ul class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div>Klik tombol <b>Isi Kuesioner</b> pada halaman utama.</div>
+        </li>
+
+        <li>
+          <div class="step-num">2</div>
+          <div>Setelah formulir terbuka, klik ikon <b>pensil (Edit)</b>.</div>
+        </li>
+
+        <li>
+          <div class="step-num">3</div>
+          <div>Klik ikon <b>titik tiga (⋮)</b> di bagian kanan atas.</div>
+        </li>
+
+        <li>
+          <div class="step-num">4</div>
+          <div>
+            Pilih salah satu opsi sesuai kebutuhan:
+            <ul class="step-sub">
+              <li><b>Make a copy</b> → untuk menggandakan dan mengedit formulir.</li>
+              <li><b>Print</b> → untuk menyimpan formulir.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">5</div>
+          <div>
+            Jika memilih <b>Print</b>, pada <i>Destination</i> pilih
+            <b>Save as PDF</b>.
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">6</div>
+          <div>
+            Klik tombol <b>Save</b>, dan file PDF akan tersimpan otomatis.
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- ================= BOX B ================= -->
+    <div class="border-2 border-dashed border-rose-300 rounded-4 p-4 p-md-5">
+
+      <h5 class="fw-bold text-rose-700 mb-4">
+        📊 B. Download Hasil Analisis Asesmen (PDF)
+      </h5>
+
+      <ul class="step-list">
+        <li>
+          <div class="step-num">1</div>
+          <div>Klik tombol <b>Lihat Hasil</b> pada halaman utama.</div>
+        </li>
+
+        <li>
+          <div class="step-num">2</div>
+          <div>Klik ikon <b>Print</b> atau tekan <b>Ctrl + P</b>.</div>
+        </li>
+
+        <li>
+          <div class="step-num">3</div>
+          <div>
+            Pada menu <i>Print settings</i>, pilih opsi
+            <b>Workbook</b> agar seluruh sheet digabungkan.
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">4</div>
+          <div>
+            Atur pengaturan halaman:
+            <ul class="step-sub">
+              <li>Ukuran kertas: <b>A4</b></li>
+              <li>Orientasi: <b>Portrait</b> atau <b>Landscape</b></li>
+              <li>Margins: <b>Normal</b></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">5</div>
+          <div>
+            Klik <b>Next</b>, lalu pada <i>Destination</i> pilih
+            <b>Save as PDF</b>.
+          </div>
+        </li>
+
+        <li>
+          <div class="step-num">6</div>
+          <div>
+            Klik tombol <b>Save</b>, dan laporan akan tersimpan dalam format PDF.
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= TIM ================= -->
+<section class="py-5 bg-rose-50">
+  <div class="container max-w-5xl">
+
+    <!-- Judul -->
+    <h2 class="fw-bold text-rose-800 text-center mb-5">
+      Profil Tim
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-md-4 d-flex">
+        <div class="card shadow-sm rounded-4 w-100 text-center p-4">
+          <h5 class="fw-bold mb-1">
+            Vivie Zuliani Erikasari
+          </h5>
+          <p class="fw-semibold text-slate-700 mb-2">
+            Project Manager
+          </p>
+          <p class="text-slate-600 mb-0 small">
+            Perencanaan, koordinasi, dan dokumentasi produk
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 d-flex">
+        <div class="card shadow-sm rounded-4 w-100 text-center p-4">
+          <h5 class="fw-bold mb-1">
+            Kharlin Ahmad Hanafi Siregar
+          </h5>
+          <p class="fw-semibold text-slate-700 mb-2">
+            Data & Assessment Designer
+          </p>
+          <p class="text-slate-600 mb-0 small">
+            Perancangan kuesioner dan indikator penilaian
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 d-flex">
+        <div class="card shadow-sm rounded-4 w-100 text-center p-4">
+          <h5 class="fw-bold mb-1">
+            Rini Ariza
+          </h5>
+          <p class="fw-semibold text-slate-700 mb-2">
+            Web & Integration
+          </p>
+          <p class="text-slate-600 mb-0 small">
+            Landing page, integrasi form & spreadsheet
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- ================= KONTAK ================= -->
-<section class="py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold text-rose-800 mb-2">Kontak</h2>
-    <p>Email: <b>riniariza33@gmail.com</b></p>
+<section class="py-6 bg-white">
+  <div class="container max-w-4xl d-flex justify-content-center">
+
+    <div class="border-2 border-dashed border-rose-300 rounded-4 
+                p-4 p-md-5 text-center
+                w-100 w-md-75 mx-auto">
+
+      <h5 class="fw-bold text-rose-800 mb-3 d-flex align-items-center justify-content-center gap-2">
+        📩 Kontak
+      </h5>
+
+      <p class="mb-1">
+        Email:
+        <b>riniariza33@gmail.com</b>
+      </p>
+
+    </div>
+
   </div>
 </section>
 
